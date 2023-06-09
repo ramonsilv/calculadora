@@ -18,33 +18,42 @@
       integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
       crossorigin="anonymous"
     ></script>
-    <!-- LINK DO BOOTSTRAP2/2-->
+    <!-- LINK DO BOOTSTRAP2/2 -->
     <title>Calculadora</title>
   </head>
 
   <body>
-    <header></header>
-
-    <main>
-      <div class="container">
-        <div class="row">
-          <div class="col-sm-12">
-            <div class="circle"></div>
-            <div class="circle"></div>
-            <div class="card-inner">
-              <h1>CALCULADORA EM JS</h1>
-              <label for="n1">Insira o valor</label><br>
-              <input type="number" id="n1" placeholder="Coloque um valor" /><br>
-              <label for="op">Coloque o sinal</label><br>
-              <input type="text" id="op" placeholder="Coloque o sinal" /><br>
-              <label for="n2">Insira o valor</label><br>
-              <input type="number" id="n2" placeholder="Coloque um valor" /><br>
-              <button onclick="calcula()">CALCULAR</button>
-              <div id="resultado"></div>
-            </div>
-          </div>
+    <header>
+      <nav class="navbar bg-body-tertiary" data-bs-theme="dark">
+        <div class="container-fluid">
+          <span class="navbar-brand mb-0 h1">CALCULADORA</span>
         </div>
-      </div>
+      </nav>
+    </header><br><br><br>
+
+    <main id="principal">
+      <div class="container-fluid" >
+        <div class="row">
+          <div class="col-sm-4"></div>
+          <div class="col-xs-12 col-sm-6">
+            <div class="card align-items-center">
+              <div class="circle"></div>
+              <div class="circle"></div>
+              <div class="card-inner col-sm">
+                <h1>CALCULADORA EM JS</h1>
+              <label for="n1">Insira o valor</label><br>
+              <input class="form-control" type="number" id="n1" placeholder="Coloque um valor" /><br>
+              <label for="op">Coloque o sinal</label><br>
+              <input class="form-control" type="text" id="op" placeholder="Coloque o sinal" /><br>
+              <label for="n2">Insira o valor</label><br>
+              <input class="form-control" type="number" id="n2" placeholder="Coloque um valor" /><br>
+              <button type="button" class="btn btn-outline-success" onclick="calcula()">CALCULAR</button>
+              <div id="resultado"></div><br>
+              </div>
+          </div>
+          </div><!--FIM DO COL-->
+        </div><!--FIM DA ROW-->
+      </div><!--FIM DO CONTAINER-->
     </main>
 
     <footer></footer>
